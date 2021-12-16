@@ -32,7 +32,17 @@
     </header>
 
     <div class="large-hero">
-      <img src="assets/images/hero--large.jpg" />
+      <picture>
+        <source
+          srcset="assets/images/header--large.jpg"
+          media="(min-width: 1190)"
+        />
+        <source
+          srcset="assets/images/header--medium.jpg"
+          media="(min-width: 730px)"
+        />
+        <img src="assets/images/header--small.jpg" alt="Main header" />
+      </picture>
       <div class="large-hero__text-content">
         <h1 class="large-hero__title">Your clarity.</h1>
         <h2 class="large-hero__subtitle">One trip away.</h2>

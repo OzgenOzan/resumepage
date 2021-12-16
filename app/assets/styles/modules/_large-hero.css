@@ -4,7 +4,7 @@
   &__text-content {
     position: absolute;
     top: 50%;
-    transform: translateY(-60%);
+    transform: translateY(-70%);
     left: 0;
     width: 100%;
     text-align: center;
@@ -13,15 +13,35 @@
   &__title {
     font-weight: 300;
     color: #2f5572;
-    font-size: 3.8rem;
+    font-size: 1.3rem;
     margin: 0;
+
+    @mixin atSmall {
+      font-size: 2.1rem;
+    }
+    @mixin atMedium {
+      font-size: 3rem;
+    }
+    @mixin atLarge {
+      font-size: 3.9rem;
+    }
   }
 
   &__subtitle {
     font-weight: 300;
     color: #2f5572;
-    font-size: 2.6rem;
+    font-size: 1.1rem;
     margin: 0;
+
+    @mixin atSmall {
+      font-size: 1.7rem;
+    }
+    @mixin atMedium {
+      font-size: 2.4rem;
+    }
+    @mixin atLarge {
+      font-size: 3rem;
+    }
   }
 
   &__description {
