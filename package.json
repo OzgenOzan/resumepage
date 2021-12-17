@@ -35,5 +35,18 @@
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OzgenOzan/deneme-travelsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OzgenOzan/deneme-travelsite/issues"
+  },
+  "homepage": "https://github.com/OzgenOzan/deneme-travelsite#readme",
+  "description": ""
 }
