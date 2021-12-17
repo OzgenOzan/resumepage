@@ -30,7 +30,11 @@
     margin-bottom: 1.1em;
   }
 
-  --b-margin-small {
+  &--b-margin-small {
     margin-bottom: 0.5em;
+  }
+
+  &--no-t-margin {
+    margin-top: 0%;
   }
 }
