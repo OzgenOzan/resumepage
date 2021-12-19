@@ -1,6 +1,7 @@
 .feature-item {
   position: relative;
   padding-left: 94px;
+  padding-bottom: 2.1rem;
 
   &__icon {
     position: absolute;
@@ -10,5 +11,6 @@
   &__title {
     font-size: 1.85rem;
     font-weight: 300;
+    margin-bottom: 0.8rem;
   }
 }
