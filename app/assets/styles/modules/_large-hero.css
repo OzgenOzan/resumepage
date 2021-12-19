@@ -56,18 +56,21 @@
     color: white;
     font-size: 1rem;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    max-width: 30rem;
+    max-width: 16rem;
     margin-left: auto;
     margin-right: auto;
 
     @mixin atSmall {
       font-size: 1.1rem;
+      max-width: 28rem;
     }
     @mixin atMedium {
       font-size: 1.4rem;
+      max-width: 28rem;
     }
     @mixin atLarge {
       font-size: 1.7rem;
+      max-width: 28rem;
     }
   }
 }
