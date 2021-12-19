@@ -1,8 +1,9 @@
 .generic-content-container {
   p {
+    font-weight: 300;
     line-height: 1.45;
     font-size: 1.1;
-    margin: 1.1rem 0;
+    margin: 0 0 1.1rem 0;
   }
 
   p a {
