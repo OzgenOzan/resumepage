@@ -24,16 +24,20 @@
     font-weight: 350;
     color: $mainBlue;
     font-size: 1.5rem;
+    padding-top: 5px;
     margin: 0;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
 
     @mixin atSmall {
+      padding-top: 0px;
       font-size: 2.3rem;
     }
     @mixin atMedium {
+      padding-top: 0px;
       font-size: 3rem;
     }
     @mixin atLarge {
+      padding-top: 0px;
       font-size: 4rem;
     }
   }
