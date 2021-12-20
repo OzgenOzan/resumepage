@@ -13,21 +13,25 @@
   }
 
   &__logo {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 4px 4px rgba(65, 65, 65, 0.5);
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: $mainBlue;
-    padding: 10px 23px;
+    background-color: honeydew;
+    padding: 0.1px 12px;
 
     @mixin atSmall {
-      padding: 12px 27px;
+      padding: 2px 16px;
     }
 
     @mixin atMedium {
       left: auto;
       transform: translateX(0%);
-      padding: 25px 36px;
+      padding: 6px 22px;
     }
   }
 
@@ -55,20 +59,25 @@
 
 .logo-size {
   width: auto;
-  max-height: 30px;
+  max-height: 54px;
 
   @mixin atSmall {
     width: auto;
-    max-height: 40px;
+    max-height: 82px;
   }
 
   @mixin atMedium {
     width: auto;
-    max-height: 40px;
+    max-height: 82px;
   }
 
   @mixin atLarge {
     width: auto;
-    max-height: 56px;
+    max-height: 116px;
+  }
+
+  @mixin atFull {
+    width: auto;
+    max-height: 152px;
   }
 }

@@ -7,7 +7,7 @@
   &__text {
     display: block;
     margin-bottom: 1rem;
-    font-weight: 275;
+    font-weight: 300;
 
     @mixin atMedium {
       display: inline;
