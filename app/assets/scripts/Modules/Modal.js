@@ -44,20 +44,19 @@ class Modal {
               </h2>
               <div class="wrapper wrapper--narrow">
                 <p class="modal__description">
-                  We will have an online order system in place soon. Until then,
-                  connect with us on any of the platforms below!
+                  Feel free to contact by using any of these platforms!
                 </p>
               </div>
 
               <div class="social-icons">
-                <a href="#" class="social-icons__icon"
-                  ><img src="assets/images/icons/facebook.svg" alt="Facebook"
+                <a href="mailto: ozan_ozgen@outlook.com" class="social-icons__icon"
+                  ><img src="assets/images/icons/email.svg" alt="email"
                 /></a>
-                <a href="#" class="social-icons__icon"
-                  ><img src="assets/images/icons/twitter.svg" alt="Twitter"
+                <a href="https://www.linkedin.com/in/719101/" class="social-icons__icon"
+                  ><img src="assets/images/icons/linkedin.svg" alt="LinkedIn"
                 /></a>
-                <a href="#" class="social-icons__icon"
-                  ><img src="assets/images/icons/instagram.svg" alt="Instagram"
+                <a href="https://github.com/OzgenOzan" class="social-icons__icon"
+                  ><img src="assets/images/icons/github.svg" alt="GitHub"
                 /></a>
                 <a href="#" class="social-icons__icon"
                   ><img src="assets/images/icons/youtube.svg" alt="YouTube"
