@@ -8,6 +8,7 @@
   }
 
   &--centered {
+    margin-top: 0.2rem;
     text-align: center;
   }
 
@@ -37,4 +38,9 @@
   &--no-t-margin {
     margin-top: 0%;
   }
+}
+
+.personal-photo {
+  border-radius: 50px;
+  border: 2px solid black;
 }
