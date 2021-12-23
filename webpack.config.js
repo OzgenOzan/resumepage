@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const fse = require("fs-extra");
 const postCSSPlugins = [
   require("postcss-import"),
   require("postcss-mixins"),
@@ -11,6 +12,15 @@ const postCSSPlugins = [
   require("postcss-nested"),
   require("autoprefixer"),
 ];
+
+class RunAfterCompile {
+  apply(compiler) {
+    compiler.hooks.done.tap("Copy images", function () {
+      fse.copySync("./app/assets/images", "./dist/assets/images");
+      fse.copySync("./app/assets/documents", "./dist/assets/documents");
+    });
+  }
+}
 
 let cssConfig = {
   test: /\.css$/i,
@@ -55,6 +65,16 @@ if (currentTask == "dev") {
 }
 
 if (currentTask == "build") {
+  config.module.rules.push({
+    test: /\.js$/,
+    exclude: /(node_modules)/,
+    use: {
+      loader: "babel-loader",
+      options: {
+        presets: ["@babel/preset-env"],
+      },
+    },
+  });
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   config.output = {
     filename: "[name].[chunkhash].js",
@@ -69,7 +89,8 @@ if (currentTask == "build") {
   };
   config.plugins.push(
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({ filename: "styles.[chunkhash].css" })
+    new MiniCssExtractPlugin({ filename: "styles.[chunkhash].css" }),
+    new RunAfterCompile()
   );
 }
 
