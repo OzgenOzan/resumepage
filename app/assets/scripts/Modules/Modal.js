@@ -58,7 +58,7 @@ class Modal {
                 <a href="https://github.com/OzgenOzan" class="social-icons__icon"
                   ><img src="assets/images/icons/github.svg" alt="GitHub"
                 /></a>
-                <a href="#" class="social-icons__icon"
+                <a href="https://www.youtube.com/channel/UCkJjnqdE7P01j0LIghylRzg" class="social-icons__icon"
                   ><img src="assets/images/icons/youtube.svg" alt="YouTube"
                 /></a>
               </div>
